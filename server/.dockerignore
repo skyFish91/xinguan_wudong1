@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+logs
+test
+*.log
+# uploads 仅排除运行时产生的目录，保留 seeds（种子占位图需打入镜像）
+uploads/tmp
+uploads/2026*

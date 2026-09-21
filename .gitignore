@@ -1,0 +1,25 @@
+node_modules/
+dist/
+*.log
+.env
+.env.local
+.DS_Store
+coverage/
+# uploads 仅忽略运行时目录，保留 seeds 种子图（归档/镜像分发需要）
+uploads/tmp/
+uploads/2026*/
+*.zip
+*.tar.gz
+.temp/
+
+# MidwayJS 运行时日志（不要提交）
+server/logs/
+
+# MidwayJS CLI 启动时生成的 audit 快照
+server/logs/wudong-server/.audit/
+
+# Vite 启动时生成的时间戳临时文件
+admin/vite.config.ts.timestamp-*.mjs
+
+# 一些可能误提交的临时文件
+*.timestamp-*.mjs

@@ -1,0 +1,45 @@
+{
+  "name": "wudong-server",
+  "version": "1.0.0",
+  "description": "乌东文旅衣食住行综合服务平台 后端（Midway）",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
+    "start": "cross-env NODE_ENV=production node bootstrap.js",
+    "build": "midway-bin build -c",
+    "test": "cross-env NODE_ENV=unittest jest --coverage --runInBand",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@midwayjs/bootstrap": "^3.20.0",
+    "@midwayjs/core": "^3.20.0",
+    "@midwayjs/info": "^3.20.0",
+    "@midwayjs/jwt": "^3.20.0",
+    "@midwayjs/koa": "^3.20.0",
+    "@midwayjs/logger": "^4.1.0",
+    "@midwayjs/redis": "^3.20.0",
+    "@midwayjs/static-file": "^3.20.24",
+    "@midwayjs/swagger": "^3.20.0",
+    "@midwayjs/typeorm": "^3.20.0",
+    "@midwayjs/upload": "^3.20.0",
+    "@midwayjs/validate": "^3.20.0",
+    "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "dayjs": "^1.11.13",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@midwayjs/cli": "^2.1.1",
+    "@midwayjs/mock": "^3.20.0",
+    "@types/jest": "^29.5.12",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20.14.0",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  }
+}
